@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive BCA Module 1 study website for Introduction to Data Analytics and Statistics.">
+  <meta name="theme-color" content="#123c32">
+  <title>Introduction to Data Analytics & Statistics — Module 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&family=Manrope:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive-polish.css">
+</head>
+<body>
+  <div class="progress-top"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand" href="#home">
+      <span class="brand-mark">DA</span>
+      <span><span>Introduction to Data Analytics</span><small>& Statistics · Module 1</small></span>
+    </a>
+    <nav class="top-nav">
+      <a href="#topics">Topics</a>
+      <a href="#mindmaps">Mind maps</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#revision">Revision</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-title">Module 1</div>
+      <label class="search-wrap">
+        <span>⌕</span>
+        <input id="searchBox" type="search" placeholder="Search this module..." aria-label="Search module">
+      </label>
+      <nav id="sideNav">
+        <a href="#topic1">01 · Meaning & Importance</a>
+        <a href="#topic2">02 · Applications</a>
+        <a href="#topic3">03 · Business Analytics</a>
+        <a href="#topic4">04 · Three Data Roles</a>
+        <a href="#topic5">05 · Role of a Data Analyst</a>
+        <a href="#topic6">06 · Analyst Skills</a>
+        <a href="#topic7">07 · Data Science vs Analytics</a>
+        <a href="#topic8">08 · Statistics</a>
+        <a href="#topic9">09 · Exploratory Data Analysis</a>
+        <a href="#mindmaps">Mind maps</a>
+        <a href="#case-study">10 · Case Study</a>
+        <a href="#glossary">11 · Glossary</a>
+        <a href="#roadmap">12 · Learning Path</a>
+        <a href="#revision">Exam Revision</a>
+        <a href="#quiz">Interactive Quiz</a>
+      </nav>
+      <div class="side-progress">
+        <div class="progress-label"><span>Your Progress</span><strong id="progressText">0%</strong></div>
+        <div class="bar"><span id="progressBar"></span></div>
+      </div>
+    </aside>
+    <button class="sidebar-backdrop" id="sidebarBackdrop" type="button" aria-label="Close navigation" hidden></button>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow">BCA · DIGITAL TEXTBOOK · MODULE 1</div>
+          <h1>Introduction to<br><span>Data Analytics</span></h1>
+          <p class="hero-sub">Understand Data. Discover Insights. Support Better Decisions.</p>
+          <p class="hero-text">A beginner-friendly university study portal that builds your understanding from the meaning of data to the role of a professional data analyst.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#topic1">Start Learning →</a>
+            <a class="btn ghost" href="#quiz">Test Yourself</a>
+          </div>
+          <div class="hero-meta"><span>✓ Beginner friendly</span><span>✓ Exam focused</span><span>✓ Interactive</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Data to decision flow diagram">
+          <div class="flow-node"><b>DATA</b><small>raw facts</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-node"><b>ANALYZE</b><small>find patterns</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-node accent"><b>INSIGHT</b><small>understand meaning</small></div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-node"><b>DECISION</b><small>take action</small></div>
+        </div>
+      </section>
+
+      <section class="overview-strip">
+        <div><strong>10</strong><span>Core topics</span></div>
+        <div><strong>15</strong><span>Applications</span></div>
+        <div><strong>20+</strong><span>Key terms</span></div>
+        <div><strong>10</strong><span>Quiz questions</span></div>
+      </section>
+
+      <div id="searchResults" class="search-results" hidden></div>
+
+      <section class="content-section" id="topics">
+        <div class="section-heading">
+          <div><span class="eyebrow">01 · FOUNDATIONS</span><h2>Build the Concept Step by Step</h2></div>
+          <p>Begin with simple definitions, then move toward technical understanding and exam-ready points.</p>
+        </div>
+
+        <article class="topic-card searchable" id="topic1" data-title="Meaning and Importance of Data Analytics">
+          <div class="topic-number">01</div>
+          <div class="topic-body">
+            <h2>Meaning and Importance of Data Analytics</h2>
+            <p class="lead">Data analytics is the systematic process of examining data to discover useful information, patterns and insights that can support decisions.</p>
+            <div class="definition-grid">
+              <div class="definition"><span>Simple</span><h3>What is data?</h3><p>Data is a collection of raw facts or observations. Examples include marks, names, attendance percentages, prices, clicks and temperatures.</p></div>
+              <div class="definition"><span>Next step</span><h3>What is information?</h3><p>Information is data that has been processed and organized so that it has meaning. A list of marks becomes useful information when we calculate averages or identify the highest mark.</p></div>
+              <div class="definition"><span>Core idea</span><h3>What is analytics?</h3><p>Analytics means examining data using suitable methods to answer questions, discover patterns and support action.</p></div>
+            </div>
+
+            <div class="flow-diagram">
+              <div>DATA<small>raw facts</small></div><i>→</i><div>PROCESSING<small>clean & organize</small></div><i>→</i><div>ANALYSIS<small>compare & examine</small></div><i>→</i><div>INSIGHT<small>meaning</small></div><i>→</i><div>DECISION<small>action</small></div>
+            </div>
+
+            <div class="two-col">
+              <div>
+                <h3>Why is data analytics needed?</h3>
+                <ul class="check-list">
+                  <li>Organizations generate large amounts of data.</li>
+                  <li>Raw data alone does not automatically provide answers.</li>
+                  <li>Analytics helps identify patterns, unusual values and trends.</li>
+                  <li>Evidence can support planning, monitoring and improvement.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Characteristics</h3>
+                <ul class="check-list">
+                  <li>Systematic and question-driven</li>
+                  <li>Uses data preparation and analysis</li>
+                  <li>Can use statistics, visualization and software</li>
+                  <li>Produces findings that should be interpreted in context</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-card"><b>Everyday life</b><p>YouTube and Netflix use viewing information to personalize recommendations; banking systems monitor transactions for unusual activity.</p></div>
+              <div class="info-card"><b>Education</b><p>Attendance, assignment scores and exam marks can help teachers identify students who may need support.</p></div>
+              <div class="info-card"><b>Healthcare</b><p>Hospitals can analyze patient records, waiting times and resource usage to improve operations.</p></div>
+            </div>
+
+            <div class="callout"><strong>Important:</strong> Analytics can support a decision, but a useful conclusion also depends on data quality, context, assumptions and domain knowledge.</div>
+
+            <details class="accordion"><summary>Data analytics lifecycle — basic introduction <span>+</span></summary><div class="details-content"><p>A simplified lifecycle is: <b>define the problem → collect data → clean/prepare → analyze → visualize/communicate → act/evaluate</b>. Real projects may repeat these stages rather than follow a perfectly straight line.</p></div></details>
+            <details class="accordion"><summary>Advantages and challenges <span>+</span></summary><div class="details-content"><div class="two-col"><ul class="check-list"><li>Evidence-based decisions</li><li>Performance monitoring</li><li>Pattern and trend discovery</li><li>Better planning</li></ul><ul class="check-list"><li>Missing or inaccurate data</li><li>Privacy and security concerns</li><li>Bias in data or methods</li><li>Misinterpretation of results</li></ul></div></div></details>
+
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Is data analytics only about numbers?</summary><p>No. Analytics can involve numerical, categorical, text, image, time-based and other data depending on the problem and methods used.</p></details><details><summary>Is data the same as information?</summary><p>Not exactly. Data are raw facts; information is data processed or organized so that it conveys useful meaning.</p></details><details><summary>Does analytics always mean prediction?</summary><p>No. Analytics can describe what happened, investigate why it happened, predict possible outcomes, or support action.</p></details></div>
+
+            <div class="remember"><span>REMEMBER</span><b>Data + Analysis + Insight → Better-supported Decision</b></div>
+            <div class="check"><b>Check your understanding:</b> A teacher calculates the average mark of a class and identifies students below the class average. What is being done? <button class="reveal-btn" data-answer="This is data analysis: raw marks are examined and summarized to obtain useful information.">Reveal answer</button><span class="answer"></span></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic2" data-title="Applications of Data Analytics">
+          <div class="topic-number">02</div><div class="topic-body">
+            <h2>Applications of Data Analytics</h2>
+            <p class="lead">Analytics is used across almost every sector. The data and questions change, but the basic idea remains: use evidence to understand a problem and support decisions.</p>
+            <div class="app-grid">
+              <div class="app-card"><span>💼</span><h3>Business</h3><p><b>Data:</b> sales, costs, customers.<br><b>Use:</b> monitor performance and demand.<br><b>Scenario:</b> compare monthly sales to plan inventory.</p></div>
+              <div class="app-card"><span>🏦</span><h3>Banking & Finance</h3><p><b>Data:</b> transactions, balances, applications.<br><b>Use:</b> risk monitoring and fraud detection.<br><b>Benefit:</b> faster, evidence-based review.</p></div>
+              <div class="app-card"><span>🏥</span><h3>Healthcare</h3><p><b>Data:</b> patient records, waiting times, treatments.<br><b>Use:</b> monitor outcomes and resources.<br><b>Scenario:</b> study appointment delays.</p></div>
+              <div class="app-card"><span>🎓</span><h3>Education</h3><p><b>Data:</b> marks, attendance, assignments.<br><b>Use:</b> identify learning gaps.<br><b>Benefit:</b> targeted academic support.</p></div>
+              <div class="app-card"><span>🛒</span><h3>E-commerce</h3><p><b>Data:</b> views, carts, orders.<br><b>Use:</b> understand customer journeys and demand.<br><b>Scenario:</b> investigate cart abandonment.</p></div>
+              <div class="app-card"><span>📣</span><h3>Marketing</h3><p><b>Data:</b> campaign responses, clicks, conversions.<br><b>Use:</b> compare campaigns and audiences.</p></div>
+              <div class="app-card"><span>📱</span><h3>Social Media</h3><p><b>Data:</b> views, likes, shares, comments.<br><b>Use:</b> understand content engagement and trends.</p></div>
+              <div class="app-card"><span>🚆</span><h3>Transportation</h3><p><b>Data:</b> routes, traffic, travel times.<br><b>Use:</b> plan routes and monitor congestion.</p></div>
+              <div class="app-card"><span>⚽</span><h3>Sports</h3><p><b>Data:</b> player statistics, scores, training measures.<br><b>Use:</b> performance analysis and strategy.</p></div>
+              <div class="app-card"><span>🏛️</span><h3>Government</h3><p><b>Data:</b> population, services, budgets.<br><b>Use:</b> plan public services and monitor programs.</p></div>
+              <div class="app-card"><span>🏭</span><h3>Manufacturing</h3><p><b>Data:</b> machine readings, defects, production time.<br><b>Use:</b> quality and process monitoring.</p></div>
+              <div class="app-card"><span>🛡️</span><h3>Cybersecurity</h3><p><b>Data:</b> logs, events, access records.<br><b>Use:</b> identify unusual activity and investigate incidents.</p></div>
+              <div class="app-card"><span>🌾</span><h3>Agriculture</h3><p><b>Data:</b> soil, weather, crop observations.<br><b>Use:</b> monitor crop conditions and resources.</p></div>
+              <div class="app-card"><span>🌦️</span><h3>Weather & Climate</h3><p><b>Data:</b> temperature, rainfall, pressure.<br><b>Use:</b> understand patterns and support forecasting.</p></div>
+              <div class="app-card"><span>🎬</span><h3>Entertainment</h3><p><b>Data:</b> viewing, listening, engagement.<br><b>Use:</b> understand audiences and content performance.</p></div>
+            </div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Is analytics used only by companies?</summary><p>No. Education, healthcare, government, agriculture, sports and many other domains use analytics.</p></details><details><summary>Does every application use the same data?</summary><p>No. The data depends on the domain, problem, available systems and analytical objective.</p></details></div>
+            <div class="remember"><span>REMEMBER</span><b>Different domain + Different data + Different question = Different analytics use.</b></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic3" data-title="Business Analytics vs Data Analytics">
+          <div class="topic-number">03</div><div class="topic-body">
+            <h2>Business Analytics vs Data Analytics</h2>
+            <div class="two-col">
+              <div class="definition"><span>Data Analytics</span><h3>Broad analytical practice</h3><p>The process of examining, cleaning, transforming and interpreting data to discover useful information and support decision-making.</p></div>
+              <div class="definition"><span>Business Analytics</span><h3>Business-focused analytics</h3><p>The application of analytical methods to business questions such as sales, customers, operations, finance, marketing and performance.</p></div>
+            </div>
+            <div class="comparison-wrap"><table><thead><tr><th>Feature</th><th>Data Analytics</th><th>Business Analytics</th></tr></thead><tbody>
+              <tr><td>Meaning</td><td>Examines data to produce useful findings.</td><td>Applies analytics to business problems.</td></tr>
+              <tr><td>Main focus</td><td>Data and analytical questions across domains.</td><td>Business performance and decisions.</td></tr>
+              <tr><td>Scope</td><td>Broad: healthcare, education, finance, science, etc.</td><td>Primarily business functions and commercial decisions.</td></tr>
+              <tr><td>Objective</td><td>Understand patterns and support decisions.</td><td>Improve business decisions and outcomes.</td></tr>
+              <tr><td>Data used</td><td>Any relevant structured or unstructured data.</td><td>Sales, customer, financial, operational and market data.</td></tr>
+              <tr><td>Applications</td><td>Many sectors.</td><td>Marketing, sales, finance, operations, strategy.</td></tr>
+              <tr><td>Users</td><td>Analysts, researchers, domain teams.</td><td>Business analysts, managers, executives and analysts.</td></tr>
+              <tr><td>Example</td><td>Hospital analyzing patient waiting times.</td><td>Online store analyzing sales to improve revenue.</td></tr>
+            </tbody></table></div>
+            <div class="flow-diagram compact"><div>DATA ANALYTICS<small>can serve many domains</small></div><i>→</i><div>BUSINESS ANALYTICS<small>business-focused application</small></div></div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Is Business Analytics completely separate from Data Analytics?</summary><p>No. Business analytics can be understood as a domain-focused application of analytics. Organizations may use the terms differently.</p></details><details><summary>Can a hospital use business analytics?</summary><p>Yes, if the question is business/operational—for example, analyzing costs, staffing or appointment capacity. A patient-outcome study is more directly a healthcare analytics use case.</p></details></div>
+            <div class="remember"><span>REMEMBER</span><b>Data Analytics = broad practice · Business Analytics = business-focused application.</b></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic4" data-title="Data Scientist Data Engineer Data Analyst">
+          <div class="topic-number">04</div><div class="topic-body">
+            <h2>Data Scientist vs Data Engineer vs Data Analyst</h2>
+            <p class="lead">These roles often collaborate. The boundaries vary by organization, so the diagrams below are a learning model—not a universal organizational rule.</p>
+            <div class="role-tabs" role="tablist">
+              <button class="role-tab active" data-role="analyst">Data Analyst</button><button class="role-tab" data-role="scientist">Data Scientist</button><button class="role-tab" data-role="engineer">Data Engineer</button>
+            </div>
+            <div class="role-panel" id="rolePanel"></div>
+            <div class="flow-vertical">
+              <div><b>DATA ENGINEER</b><span>collects · stores · processes data</span></div><div>↓</div>
+              <div><b>DATA ANALYST</b><span>analyzes · visualizes · communicates</span></div><div>↓</div>
+              <div><b>DATA SCIENTIST</b><span>models · predicts · experiments</span></div>
+            </div>
+            <p class="small-note">Real organizations may have overlapping responsibilities and different workflows. A data scientist may work directly with engineers; an analyst may write SQL and build pipelines; titles are not identical everywhere.</p>
+            <div class="comparison-wrap"><table><thead><tr><th>Feature</th><th>Data Analyst</th><th>Data Scientist</th><th>Data Engineer</th></tr></thead><tbody>
+              <tr><td>Main goal</td><td>Understand and communicate findings.</td><td>Build analytical/statistical/ML models and generate predictions or insights.</td><td>Make reliable data available for use.</td></tr>
+              <tr><td>Main work</td><td>Cleaning, SQL, analysis, visualization, reporting.</td><td>Statistics, experimentation, modeling, machine learning.</td><td>Pipelines, storage, integration, data infrastructure.</td></tr>
+              <tr><td>Programming</td><td>Basic–moderate; SQL is common.</td><td>Moderate–advanced; Python/R often used.</td><td>Strong; often Python/Java/Scala/SQL and platform tools.</td></tr>
+              <tr><td>Statistics</td><td>Core descriptive/inferential skills.</td><td>Deep statistical and modeling knowledge.</td><td>Useful for data quality, but role is infrastructure-focused.</td></tr>
+              <tr><td>Machine Learning</td><td>Usually not the primary focus.</td><td>Common part of the role.</td><td>Supports infrastructure for ML systems where required.</td></tr>
+              <tr><td>Databases</td><td>Queries and uses databases.</td><td>Uses data stores for modeling.</td><td>Designs/manages data pipelines and platforms.</td></tr>
+              <tr><td>Visualization</td><td>Major responsibility.</td><td>Used to explore and communicate model/data findings.</td><td>Usually not the main output.</td></tr>
+              <tr><td>Common tools</td><td>Excel, SQL, Python, Pandas, Power BI, Tableau.</td><td>Python/R, notebooks, ML libraries, SQL.</td><td>SQL, Python, cloud/data platforms, orchestration tools.</td></tr>
+              <tr><td>Typical output</td><td>Reports, dashboards, findings.</td><td>Models, experiments, predictions, analytical solutions.</td><td>Pipelines, data stores, reliable datasets.</td></tr>
+            </tbody></table></div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Does a Data Analyst need machine learning?</summary><p>Not to perform the core analyst role. Strong foundations in data cleaning, SQL, statistics and visualization are more central. ML basics can be useful later.</p></details><details><summary>Who works with databases most directly?</summary><p>All three can use databases, but data engineers typically focus more heavily on data storage, pipelines and infrastructure.</p></details></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic5" data-title="Role of a Data Analyst">
+          <div class="topic-number">05</div><div class="topic-body">
+            <h2>Role of a Data Analyst</h2>
+            <p class="lead">A Data Analyst turns a real-world question into evidence that people can understand and use.</p>
+            <div class="workflow" id="workflow">
+              <button data-stage="problem" class="active"><b>1</b>Problem</button><button data-stage="collect"><b>2</b>Collect</button><button data-stage="clean"><b>3</b>Clean</button><button data-stage="analyze"><b>4</b>Analyze</button><button data-stage="visualize"><b>5</b>Visualize</button><button data-stage="insight"><b>6</b>Insight</button><button data-stage="decision"><b>7</b>Decision</button>
+            </div>
+            <div class="workflow-detail" id="workflowDetail"></div>
+            <div class="two-col">
+              <div><h3>Typical responsibilities</h3><ol class="number-list"><li>Understand the problem</li><li>Obtain data from databases, files or APIs</li><li>Clean missing, duplicate and erroneous data</li><li>Transform data into useful formats</li><li>Analyze and calculate relevant statistics</li><li>Find patterns and exceptions</li><li>Create visualizations and dashboards</li><li>Communicate findings and limitations</li><li>Support decision-making</li></ol></div>
+              <div><h3>Example</h3><div class="case-mini"><b>Question:</b> Why did monthly sales fall?<p>The analyst checks sales by product, region and time period, validates data quality, compares relevant groups, visualizes changes and communicates evidence. The final explanation should distinguish what the data shows from assumptions about why it happened.</p></div></div>
+            </div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Should an analyst immediately make a dashboard?</summary><p>No. First understand the question and data. A dashboard is useful only when its measures and visuals answer a meaningful need.</p></details><details><summary>Why is cleaning part of analysis?</summary><p>Incorrect, duplicate or missing values can distort summaries and conclusions. Preparation is therefore an important part of a reliable workflow.</p></details></div>
+            <div class="remember"><span>REMEMBER</span><b>Ask → Collect → Clean → Analyze → Visualize → Explain → Act.</b></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic6" data-title="Skills Required for Data Analyst">
+          <div class="topic-number">06</div><div class="topic-body">
+            <h2>Skills Required for a Data Analyst</h2>
+            <div class="skill-levels">
+              <div class="skill-level"><span>BEGINNER</span><h3>Build the foundation</h3><p>Excel · Basic Statistics · Data concepts</p></div>
+              <div class="skill-level"><span>INTERMEDIATE</span><h3>Work with real datasets</h3><p>SQL · Python · Pandas · Data Cleaning · Visualization</p></div>
+              <div class="skill-level"><span>ADVANCED</span><h3>Extend your analytical range</h3><p>Advanced Statistics · BI Dashboards · Predictive Analytics · ML basics</p></div>
+            </div>
+            <div class="skills-grid">
+              <div><h3>Technical</h3><p>Excel, SQL, Python, Pandas, NumPy, statistics, visualization, Power BI, Tableau and database concepts.</p></div>
+              <div><h3>Analytical</h3><p>Critical thinking, problem solving, pattern recognition, questioning assumptions and statistical reasoning.</p></div>
+              <div><h3>Communication</h3><p>Data storytelling, presentation, report writing, dashboard design and explaining technical findings simply.</p></div>
+            </div>
+            <div class="callout"><strong>Beginner advice:</strong> You do not need to master every tool at once. Build strong foundations, then add tools as your projects require them.</div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Which should I learn first: Python or SQL?</summary><p>Both are useful. For many analyst workflows, basic SQL is valuable for querying data, while Python becomes powerful for cleaning, analysis and automation.</p></details><details><summary>Do analysts need strong mathematics?</summary><p>They need practical statistical reasoning. Start with descriptive statistics, distributions, interpretation and uncertainty before moving to more advanced methods.</p></details></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic7" data-title="Data Science vs Data Analytics">
+          <div class="topic-number">07</div><div class="topic-body">
+            <h2>Data Science vs Data Analytics</h2>
+            <div class="two-col"><div class="definition"><span>Data Analytics</span><h3>Understand existing data</h3><p>Often focuses on understanding what happened, why it happened, patterns, trends and decision support.</p></div><div class="definition"><span>Data Science</span><h3>Broader analytical field</h3><p>Can combine data analysis, statistics, programming, machine learning, predictive modeling, AI and large-scale data processing.</p></div></div>
+            <div class="comparison-wrap"><table><thead><tr><th>Feature</th><th>Data Analytics</th><th>Data Science</th></tr></thead><tbody>
+              <tr><td>Main focus</td><td>Analysis and decision support.</td><td>Broader data-driven problem solving, including modeling.</td></tr>
+              <tr><td>Main question</td><td>What happened? Why? What does the data show?</td><td>What may happen? What can we predict/model/optimize?</td></tr>
+              <tr><td>Statistics</td><td>Important.</td><td>Important and often deeper for modeling.</td></tr>
+              <tr><td>Programming</td><td>Useful, especially SQL/Python.</td><td>Often a major component.</td></tr>
+              <tr><td>Machine Learning</td><td>May be used, but is not always central.</td><td>Common component.</td></tr>
+              <tr><td>Visualization</td><td>Common output.</td><td>Used for exploration and communication.</td></tr>
+              <tr><td>Prediction</td><td>Possible, depending on role.</td><td>Frequently included in predictive modeling.</td></tr>
+              <tr><td>Typical output</td><td>Reports, dashboards, findings.</td><td>Models, predictions, experiments and analytical systems.</td></tr>
+              <tr><td>Example</td><td>Explain monthly attendance patterns.</td><td>Build a model to estimate risk of future outcomes.</td></tr>
+            </tbody></table></div>
+            <div class="mindmap"><div class="root">DATA</div><div class="branch"><span>DATA ANALYTICS<br><small>Descriptive · Diagnostic · Visualization</small></span><span>DATA SCIENCE<br><small>Analytics · Statistics · ML · Predictive Modeling · AI</small></span></div></div>
+            <div class="callout"><strong>Common misconception:</strong> “Data Analytics and Data Science are exactly the same.” They overlap, but the terms commonly describe different scopes. Organizations use the titles and responsibilities differently.</div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Can data science include data analytics?</summary><p>Yes. Data analytics is commonly considered one component or capability within the broader data science landscape.</p></details><details><summary>Is prediction required for data science?</summary><p>Not every data science project is predictive. Data science can include experimentation, modeling, optimization and other forms of analysis.</p></details></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic8" data-title="Statistics">
+          <div class="topic-number">08</div><div class="topic-body">
+            <h2>Statistics</h2>
+            <p class="lead">Statistics is the branch of mathematics that collects, organizes, presents, analyzes and interprets data so that we can draw meaningful conclusions.</p>
+            <div class="callout"><strong>Core idea:</strong> Statistics converts raw data into meaningful information. For marks such as 45, 60, 72, 55 and 68, it can reveal the average, highest and lowest marks, spread, unusual values and how scores are distributed.</div>
+            <div class="two-col">
+              <div class="definition"><span>Why it matters</span><h3>Statistics in data analytics</h3><p>Analytics often works with large datasets. Statistics helps an analyst summarize data, identify patterns, find unusual observations, compare groups, measure relationships and support data-driven decisions.</p></div>
+              <div class="definition"><span>Example</span><h3>1,000 student marks</h3><p>Instead of examining every mark individually, mean, median, standard deviation, quartiles, percentiles and correlation give a quick view of student performance.</p></div>
+            </div>
+            <div class="stats-tool">
+              <div><span class="eyebrow">TRY IT</span><h3>Explore a set of marks</h3><p>Enter comma-separated numbers to calculate simple descriptive statistics.</p></div>
+              <label>Values<input id="statsInput" value="45, 60, 72, 55, 68" aria-label="Numbers for statistics calculator"></label>
+              <button class="btn primary" id="statsCalculate" type="button">Calculate</button>
+              <div class="case-tools stats-results" id="statsResults" aria-live="polite"></div>
+            </div>
+            <div class="two-col">
+              <div><h3>Descriptive statistics</h3><p>Descriptive statistics organizes, summarizes and describes collected data. It answers: <b>What does the data look like?</b></p><ul class="check-list"><li>Central tendency: mean, median and mode</li><li>Dispersion: range, variance and standard deviation</li><li>Other measures: quartiles, percentiles, skewness, kurtosis, covariance, correlation and z-score</li></ul></div>
+              <div><h3>Inferential statistics</h3><p>Inferential statistics uses a sample to estimate or draw conclusions about a larger population. It answers: <b>What can we conclude?</b></p><ul class="check-list"><li>Estimation and confidence intervals</li><li>Hypothesis testing and statistical significance</li><li>t-test, chi-square test, ANOVA and regression</li></ul></div>
+            </div>
+            <div class="comparison-wrap"><table><thead><tr><th>Concept</th><th>Meaning</th><th>Example</th></tr></thead><tbody><tr><td>Population</td><td>The complete set of people, objects or observations of interest.</td><td>All 5,000 students in a college.</td></tr><tr><td>Sample</td><td>A smaller group selected from the population for analysis.</td><td>200 selected students.</td></tr><tr><td>Descriptive</td><td>Describes collected data using summaries, tables and graphs.</td><td>Average mark of a class.</td></tr><tr><td>Inferential</td><td>Generalizes from a sample to a population.</td><td>Estimating college-wide satisfaction from 200 responses.</td></tr></tbody></table></div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Why not study the entire population?</summary><p>A population may be expensive, time-consuming, difficult or impossible to study. A carefully selected sample can provide useful evidence with fewer resources.</p></details><details><summary>Are descriptive and inferential statistics the same?</summary><p>No. Descriptive statistics summarizes the data collected; inferential statistics uses sample data to make estimates or conclusions about a wider population.</p></details></div>
+            <div class="remember"><span>REMEMBER</span><b>Descriptive = describe what happened · Inferential = conclude what may be true beyond the sample.</b></div>
+          </div>
+        </article>
+
+        <article class="topic-card searchable" id="topic9" data-title="Exploratory Data Analysis EDA">
+          <div class="topic-number">09</div><div class="topic-body">
+            <h2>Exploratory Data Analysis (EDA)</h2>
+            <p class="lead">EDA is the process of examining, summarizing, visualizing and exploring a dataset before deeper analysis or modeling.</p>
+            <div class="flow-diagram"><div>INSPECT<small>rows & columns</small></div><i>→</i><div>CHECK<small>types & missing values</small></div><i>→</i><div>SUMMARIZE<small>statistics</small></div><i>→</i><div>VISUALIZE<small>patterns</small></div><i>→</i><div>QUESTION<small>next analysis</small></div></div>
+            <div class="two-col"><div><h3>What can EDA discover?</h3><ul class="check-list"><li>Patterns and trends</li><li>Relationships between variables</li><li>Missing values and duplicate records</li><li>Outliers, errors and unexpected values</li><li>Distributions and possible assumptions</li></ul></div><div><h3>Questions to ask first</h3><ul class="check-list"><li>How many rows and columns are present?</li><li>What are the column names and data types?</li><li>Are values missing or duplicated?</li><li>What is typical, unusual or uneven?</li><li>Are two variables related?</li></ul></div></div>
+            <div class="info-grid"><div class="info-card"><b>Numerical checks</b><p>Count, mean, median, minimum, maximum, range, quartiles and standard deviation.</p></div><div class="info-card"><b>Visual checks</b><p>Bar charts, histograms, box plots, scatter plots and line charts can reveal structure.</p></div><div class="info-card"><b>Good practice</b><p>Investigate unusual values rather than deleting them automatically. Record assumptions and limitations.</p></div></div>
+            <div class="callout"><strong>In simple words:</strong> EDA means exploring the data before trusting a deeper analysis or model. It helps an analyst understand what the dataset can and cannot support.</div>
+            <div class="doubt"><h3>Student Doubts</h3><details><summary>Is EDA only about making graphs?</summary><p>No. EDA combines inspection, data-quality checks, numerical summaries, visualizations and questions about meaning and context.</p></details><details><summary>Should every outlier be removed?</summary><p>No. An outlier may be a valid rare observation, a measurement error or a data-entry problem. Investigate it first.</p></details></div>
+            <div class="remember"><span>REMEMBER</span><b>Explore first, understand the data, then choose an appropriate analysis.</b></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-section notes-map-section" id="mindmaps">
+        <div class="section-heading"><div><span class="eyebrow">SKETCHBOOK · QUICK RECALL</span><h2>Module 1 Mind Maps</h2></div><p>Use the branches to revise the big picture, then jump straight to a topic.</p></div>
+        <div class="mindmap-pair">
+          <article class="hand-map">
+            <div class="map-title"><span>SKETCH 01</span><h3>From Question to Decision</h3></div>
+            <div class="mindmap-flow" aria-label="Analytics workflow: question, data, analysis, insight, decision">
+              <a href="#topic5"><b>QUESTION</b><small>define the problem</small></a><i aria-hidden="true">→</i>
+              <a href="#topic1"><b>DATA</b><small>collect & prepare</small></a><i aria-hidden="true">→</i>
+              <a href="#topic8"><b>ANALYSIS</b><small>compare & examine</small></a><i aria-hidden="true">→</i>
+              <a href="#topic9"><b>INSIGHT</b><small>interpret patterns</small></a><i aria-hidden="true">→</i>
+              <a href="#case-study"><b>DECISION</b><small>choose an action</small></a>
+            </div>
+            <p class="hand-note">A good analysis starts with a useful question, not with a chart.</p>
+          </article>
+          <article class="hand-map concept-map">
+            <div class="map-title"><span>SKETCH 02</span><h3>What Makes Up Analytics?</h3></div>
+            <div class="concept-web">
+              <a class="web-node web-top" href="#topic1">Meaning<br><small>facts → information</small></a>
+              <a class="web-node web-left" href="#topic2">Applications<br><small>many sectors</small></a>
+              <a class="web-node web-right" href="#topic4">People<br><small>analyst · scientist · engineer</small></a>
+              <a class="web-core" href="#topic1">DATA<br>ANALYTICS</a>
+              <a class="web-node web-lower-left" href="#topic6">Skills<br><small>tools + thinking</small></a>
+              <a class="web-node web-lower-right" href="#topic8">Statistics<br><small>describe + infer</small></a>
+              <a class="web-node web-bottom" href="#topic9">EDA<br><small>explore before deciding</small></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section searchable" id="case-study" data-title="Student Performance Analytics Case Study">
+        <div class="section-heading"><div><span class="eyebrow">08 · CASE STUDY</span><h2>Student Performance Analytics</h2></div><p>Use a small dataset to connect concepts with an actual analytical workflow.</p></div>
+        <div class="comparison-wrap"><table><thead><tr><th>Student</th><th>Attendance</th><th>Assignment</th><th>Internal Exam</th><th>Exam</th></tr></thead><tbody>
+          <tr><td>Anu</td><td>95%</td><td>85</td><td>78</td><td>88</td></tr><tr><td>Rahul</td><td>72%</td><td>65</td><td>60</td><td>55</td></tr><tr><td>Meera</td><td>92%</td><td>90</td><td>88</td><td>94</td></tr><tr><td>Arun</td><td>60%</td><td>50</td><td>55</td><td>48</td></tr>
+        </tbody></table></div>
+        <div class="case-tools">
+          <div class="metric"><span>Average exam mark</span><strong>71.25</strong></div>
+          <div class="metric"><span>Highest exam mark</span><strong>94 · Meera</strong></div>
+          <div class="metric"><span>Attendance below 75%</span><strong>2 · Rahul & Arun</strong></div>
+        </div>
+        <div class="two-col">
+          <div><h3>Questions we can ask</h3><ul class="check-list"><li>Who has the highest exam mark?</li><li>Which students have attendance below 75%?</li><li>What is the average exam mark?</li><li>Which student may require academic support based on selected criteria?</li></ul></div>
+          <div><h3>Observation → Analysis → Decision</h3><p><b>Observation:</b> Arun has 60% attendance and the lowest exam mark (48).</p><p><b>Analysis:</b> The values meet a selected support criterion, but this small dataset alone does not establish why the mark is low.</p><p><b>Decision:</b> A teacher could review Arun’s attendance, learning progress and other context before deciding on support.</p></div>
+        </div>
+        <div class="callout"><strong>Academic caution:</strong> This example does not claim correlation or causation. A larger dataset and appropriate statistical analysis would be needed for such conclusions.</div>
+      </section>
+
+      <section class="content-section" id="glossary">
+        <div class="section-heading"><div><span class="eyebrow">09 · QUICK REFERENCE</span><h2>Interactive Glossary</h2></div><p>Search a term and open the card for a simple, technical definition and example.</p></div>
+        <input class="glossary-search" id="glossarySearch" placeholder="Search glossary terms..." aria-label="Search glossary">
+        <div class="glossary-grid" id="glossaryGrid"></div>
+      </section>
+
+      <section class="content-section" id="roadmap">
+        <div class="section-heading"><div><span class="eyebrow">10 · LEARNING PATH</span><h2>Beginner → Intermediate → Advanced</h2></div><p>Follow a gradual route instead of trying to learn every tool at once.</p></div>
+        <div class="roadmap">
+          <div class="road"><span>LEVEL 1</span><h3>BEGINNER</h3><p>Data → Information → Analytics → Types of Data → Basic Statistics</p></div>
+          <div class="road-arrow">→</div>
+          <div class="road"><span>LEVEL 2</span><h3>INTERMEDIATE</h3><p>Excel → SQL → Data Cleaning → Visualization → Dashboards</p></div>
+          <div class="road-arrow">→</div>
+          <div class="road"><span>LEVEL 3</span><h3>ADVANCED</h3><p>Python → Pandas → Statistics → Advanced Analytics → ML basics</p></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="flashcards">
+        <div class="section-heading"><div><span class="eyebrow">ACTIVE RECALL</span><h2>Flashcards</h2></div><p>Click a card to reveal the answer. Use these for quick revision.</p></div>
+        <div class="flash-grid" id="flashGrid"></div>
+      </section>
+
+      <section class="content-section" id="revision">
+        <div class="section-heading"><div><span class="eyebrow">EXAM PREPARATION</span><h2>Exam-Oriented Quick Revision</h2></div><p>Questions are based on Module 1 concepts presented in this study resource.</p></div>
+        <div class="exam-grid">
+          <details><summary>2-Mark Questions · 10</summary><ol><li>Define data.</li><li>What is information?</li><li>Define data analytics.</li><li>What is business analytics?</li><li>Who is a data analyst?</li><li>What is a data engineer?</li><li>What is a dashboard?</li><li>What is an insight?</li><li>State one application of data analytics.</li><li>What is data science?</li></ol></details>
+          <details><summary>5/6-Mark Questions · 10</summary><ol><li>Explain the importance of data analytics.</li><li>Describe any five applications of analytics.</li><li>Differentiate data analytics and business analytics.</li><li>Explain the role of a data analyst.</li><li>Compare data analyst, data scientist and data engineer.</li><li>Explain the basic analytics workflow.</li><li>Discuss technical, analytical and communication skills of an analyst.</li><li>Differentiate data analytics and data science.</li><li>Explain the importance of data cleaning.</li><li>Explain analytics with an education example.</li></ol></details>
+          <details><summary>10/14-Mark Questions · 5</summary><ol><li>Explain the meaning, importance, characteristics, lifecycle, advantages and challenges of data analytics with examples.</li><li>Discuss applications of data analytics in major sectors with suitable examples.</li><li>Compare Data Analyst, Data Scientist and Data Engineer with responsibilities, skills, tools and outputs.</li><li>Explain the complete role of a Data Analyst from problem definition to decision-making.</li><li>Discuss Data Analytics vs Data Science and explain their relationship using a suitable diagram.</li></ol></details>
+        </div>
+        <div class="memory-grid">
+          <div><b>Analyst workflow</b><span>Ask → Collect → Clean → Analyze → Visualize → Explain → Act</span></div>
+          <div><b>Three roles</b><span>Engineer = data infrastructure · Analyst = findings · Scientist = models</span></div>
+          <div><b>Analytics vs Science</b><span>Analytics emphasizes analysis; Data Science has a broader modeling/ML scope.</span></div>
+          <div><b>Applications</b><span>Remember sectors by grouping: Business, Finance, Health, Education, Commerce, Public, Industry.</span></div>
+        </div>
+      </section>
+
+      <section class="content-section quiz-section" id="quiz">
+        <div class="section-heading"><div><span class="eyebrow">CHECK YOUR UNDERSTANDING</span><h2>10-Question Module 1 Quiz</h2></div><p>Choose an answer for every question, then submit to see your score and explanations.</p></div>
+        <form id="quizForm"></form>
+        <div class="quiz-actions"><button class="btn primary" id="submitQuiz" type="button">Submit Quiz</button><button class="btn ghost" id="resetQuiz" type="button">Try Again</button></div>
+        <div id="quizResult" class="quiz-result" hidden></div>
+      </section>
+
+      <section class="content-section scenario" id="scenario">
+        <div class="section-heading"><div><span class="eyebrow">SCENARIO PRACTICE</span><h2>What Should the Analyst Do First?</h2></div></div>
+        <div class="scenario-box"><p><b>Scenario:</b> An online shopping company wants to understand why sales decreased last month.</p>
+          <div id="scenarioOptions"></div><div id="scenarioFeedback"></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="module-summary">
+        <div class="section-heading"><div><span class="eyebrow">FINAL SUMMARY</span><h2>Module 1 in One View</h2></div><p>Click a node to jump to the relevant concept.</p></div>
+        <div class="mindmap big-map">
+          <a href="#topic1" class="root">INTRODUCTION TO<br>DATA ANALYTICS</a>
+          <div class="map-grid">
+            <a href="#topic1">Meaning & Importance</a><a href="#topic2">Applications</a><a href="#topic3">Business Analytics</a><a href="#topic4">Data Roles</a><a href="#topic5">Role of Analyst</a><a href="#topic6">Analyst Skills</a><a href="#topic7">Data Science vs Analytics</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div><strong>Introduction to Data Analytics & Statistics</strong><span>Module 1 Study Resource · BCA</span></div>
+        <div class="footer-links"><a href="#home">Back to Top</a><a href="#revision">Quick Revision</a><a href="#quiz">Quiz</a><a href="#glossary">Glossary</a></div>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
